@@ -1,0 +1,29 @@
+{
+  "name": "shop-frontend",
+  "version": "1.0.0",
+  "description": "React, GraphQL Webapp with SSR",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --watch",
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next start",
+    "test-win": "SET NODE_ENV=test && jest --watch",
+    "heroku-postbuild": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoi01/react_ecommerce_platform.git"
+  },
+  "author": "echoi01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoi01/react_ecommerce_platform/issues"
+  },
+  "homepage": "https://github.com/echoi01/react_ecommerce_platform#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}

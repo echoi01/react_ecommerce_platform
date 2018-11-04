@@ -1,0 +1,19 @@
+{
+  "name": "storebackend",
+  "version": "1.0.0",
+  "description": "backend for react next graphql apollo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoi01/react_ecommerce_platform.git"
+  },
+  "author": "echoi01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoi01/react_ecommerce_platform/issues"
+  },
+  "homepage": "https://github.com/echoi01/react_ecommerce_platform#readme"
+}
