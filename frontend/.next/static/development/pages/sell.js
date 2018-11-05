@@ -9867,20 +9867,7 @@ var Sell = function Sell(props) {
       lineNumber: 5
     },
     __self: this
-  }, "Sell!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "Home!")));
+  }, "Sell!"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sell);
@@ -9906,7 +9893,7 @@ var Sell = function Sell(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/sell.js ***!
   \*****************************/
@@ -9931,5 +9918,5 @@ module.exports = dll_10edf27d814a728d21af;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=sell.js.map

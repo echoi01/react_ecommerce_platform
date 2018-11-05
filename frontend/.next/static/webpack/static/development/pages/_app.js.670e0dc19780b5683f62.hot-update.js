@@ -1,20 +1,20 @@
 webpackHotUpdate("static/development/pages/_app.js",{
 
-/***/ "./pages/_app.js":
-/*!***********************!*\
-  !*** ./pages/_app.js ***!
-  \***********************/
+/***/ "./components/Page.js":
+/*!****************************!*\
+  !*** ./components/Page.js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/eddie/Desktop/Projects/shop/frontend/pages/_app.js";
-
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/home/eddie/Desktop/Projects/shop/frontend/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -34,70 +34,83 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  max-width: 1000px;\n  margin: 0 auto;\n  padding: 2rem;\n  background: red;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  background: white;\n  color: black;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var MyApp =
+
+
+
+var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
+var Inner = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject2());
+
+var Page =
 /*#__PURE__*/
-function (_App) {
-  _inherits(MyApp, _App);
+function (_Component) {
+  _inherits(Page, _Component);
 
-  function MyApp() {
-    _classCallCheck(this, MyApp);
+  function Page() {
+    _classCallCheck(this, Page);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MyApp).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Page).apply(this, arguments));
   }
 
-  _createClass(MyApp, [{
+  _createClass(Page, [{
     key: "render",
     value: function render() {
-      var Component = this.props.Component;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 21
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 22
         },
         __self: this
-      }, " Hey I'm on every page "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 23
         },
         __self: this
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, this.props.children));
     }
   }]);
 
-  return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_1___default.a);
+  return Page;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (MyApp);
-    (function (Component, route) {
-      if(!Component) return
-      if (false) {}
-      module.hot.accept()
-      Component.__route = route
-
-      if (module.hot.status() === 'idle') return
-
-      var components = next.router.components
-      for (var r in components) {
-        if (!components.hasOwnProperty(r)) continue
-
-        if (components[r].Component.__route === route) {
-          next.router.update(r, Component)
-        }
-      }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/_app")
-  
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+/* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ })
 
 })
-//# sourceMappingURL=_app.js.e9618e36898106c3819f.hot-update.js.map
+//# sourceMappingURL=_app.js.670e0dc19780b5683f62.hot-update.js.map
