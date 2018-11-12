@@ -9,6 +9,7 @@ const Meta = () => (
     <link rel="stylesheet" type="text/css"
     href="/static/nprogress.css" />
     <title>Store!</title>
+    
   </Head>
 )
 
