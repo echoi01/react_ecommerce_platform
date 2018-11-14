@@ -1,0 +1,5 @@
+type User {
+  id: ID! @unique
+  password: String!
+  name: String!
+}
