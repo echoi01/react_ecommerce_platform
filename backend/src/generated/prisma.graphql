@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/eddie-choi-29594a/ez-money/dev
-# timestamp: Tue Nov 13 2018 23:05:47 GMT-0800 (PST)
+# timestamp: Tue Nov 13 2018 23:12:11 GMT-0800 (PST)
 
 type AggregateUser {
   count: Int!
@@ -70,7 +70,7 @@ type Subscription {
 
 type User implements Node {
   id: ID!
-  password: String!
+  email: String!
   name: String!
 }
 
@@ -85,7 +85,7 @@ type UserConnection {
 }
 
 input UserCreateInput {
-  password: String!
+  email: String!
   name: String!
 }
 
@@ -101,8 +101,8 @@ type UserEdge {
 enum UserOrderByInput {
   id_ASC
   id_DESC
-  password_ASC
-  password_DESC
+  email_ASC
+  email_DESC
   name_ASC
   name_DESC
   updatedAt_ASC
@@ -113,7 +113,7 @@ enum UserOrderByInput {
 
 type UserPreviousValues {
   id: ID!
-  password: String!
+  email: String!
   name: String!
 }
 
@@ -157,12 +157,12 @@ input UserSubscriptionWhereInput {
 }
 
 input UserUpdateInput {
-  password: String
+  email: String
   name: String
 }
 
 input UserUpdateManyMutationInput {
-  password: String
+  email: String
   name: String
 }
 
@@ -215,46 +215,46 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   id_not_ends_with: ID
-  password: String
+  email: String
 
   """All values that are not equal to given value."""
-  password_not: String
+  email_not: String
 
   """All values that are contained in given list."""
-  password_in: [String!]
+  email_in: [String!]
 
   """All values that are not contained in given list."""
-  password_not_in: [String!]
+  email_not_in: [String!]
 
   """All values less than the given value."""
-  password_lt: String
+  email_lt: String
 
   """All values less than or equal the given value."""
-  password_lte: String
+  email_lte: String
 
   """All values greater than the given value."""
-  password_gt: String
+  email_gt: String
 
   """All values greater than or equal the given value."""
-  password_gte: String
+  email_gte: String
 
   """All values containing the given string."""
-  password_contains: String
+  email_contains: String
 
   """All values not containing the given string."""
-  password_not_contains: String
+  email_not_contains: String
 
   """All values starting with the given string."""
-  password_starts_with: String
+  email_starts_with: String
 
   """All values not starting with the given string."""
-  password_not_starts_with: String
+  email_not_starts_with: String
 
   """All values ending with the given string."""
-  password_ends_with: String
+  email_ends_with: String
 
   """All values not ending with the given string."""
-  password_not_ends_with: String
+  email_not_ends_with: String
   name: String
 
   """All values that are not equal to given value."""

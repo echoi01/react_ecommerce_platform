@@ -4,7 +4,8 @@
   "description": "backend for react next graphql apollo app",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "prisma deploy"
   },
   "repository": {
     "type": "git",
