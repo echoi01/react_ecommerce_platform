@@ -1,8 +1,8 @@
-#imp0rt made possible via graphql-import
+#imp0rt made possible via graphql-import and made via comment
 # import * from './generated/prisma.graphql'
 
 type Mutation {
-    createItem(title: String, descripition: String, Price: Int,
+    createItem(title: String, description: String, price: Int,
     image: String, largeImage: String): Item!
 }
 
