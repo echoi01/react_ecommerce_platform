@@ -1,7 +1,11 @@
+#imp0rt made possible via graphql-import
+# import * from './generated/prisma.graphql'
+
 type Mutation {
-    temp: String
+    createItem(title: String, descripition: String, Price: Int,
+    image: String, largeImage: String): Item!
 }
 
 type Query {
-    temp: String
+    items: [Item]!
 }

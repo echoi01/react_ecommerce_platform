@@ -1,3 +1,5 @@
+# For prisma, defines how to generate schema
+
 type User {
   id: ID! @unique
   email: String!
